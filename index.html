@@ -1,80 +1,94 @@
----
-layout: default
-title: Trepo
----
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Trepo</title>
+        <meta name="description" content="Trepo, the Open Source Genealogy API">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<style type="text/css">
-.bigger {font-size: 175%;}
-</style>
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
 
-<div class="row">
-  <div class="large-10 large-offset-1 columns">
-    <h1 class="text-center">Trepo</h1>
-  </div>
-</div>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
 
-<div class="row text-center">
-  <div class="small-8 small-offset-2 columns">
 
-    <div class="row">
-      <div class="small-12 columns">
-        <a href="/overview/api" class="button expand"><span class="bigger">REST API</span><br />(HTTP FTW)</a>
-      </div>
-    </div>
 
-    <div class="row">
-      <div class="small-4 columns">
-        <a href="/overview/npipes" class="button expand"><br /><br /><span class="bigger">nPipes</span><br />(Querying ALL the Data)<br /><br /><br /></a>
-      </div>
-      <div class="small-4 columns">
-        <a href="/overview/ptree" class="button expand"><br /><br /><span class="bigger">pTree</span><br />(Schemas &amp; Standards)<br /><br /><br /></a>
-      </div>
-      <div class="small-4 columns">
-        <a href="/overview/dcap" class="button expand"><br /><br /><span class="bigger">dCap</span><br />(Share and Syncronize)<br /><br /><br /></a>
-      </div>
-    </div>
+        <!-- Hero Header -->
+        <div id="hero">
+            <div id="hero-img"></div>
+            <div id="hero-overlay"></div>
+            <div id="hero-content">
+                <img id="hero-logo" src="/img/logo-xlg.png" />
+                <div id="hero-text">The Open Source Genealogy API</div>
+            </div>
+        </div>
 
-    <div class="row">
-      <div class="small-12 columns"><a href="/overview/vgraph" class="button expand"><span class="bigger">vGraph</span><br />(Version them Nodes)</a></div>
-    </div>
+        <!-- Actions Block -->
+        <div id="action">
+            <div id="action-download" class="action-block">
+                <h2>Download</h2>
+                <p>Download one of the available implementations to try it out.</p>
+                <a href="#">Download</a>
+            </div>
+            <div id="action-learn" class="action-block">
+                <h2>Learn</h2>
+                <p>Explore the documentation</p>
+                <a href="#">documentation</a></div>
+            <div id="action-contribute" class="action-block">
+                <h2>Contribute</h2>
+                <p>Contribute to the project</p>
+                <a href="https://github.com/trepo">GitHub</a></div>
+            </div>
+        </div>
 
-    <div class="row">
-      <div class="small-12 columns"><a href="/overview/graph" class="button expand">Property Graph</a></div>
-    </div>
+        <!-- Goals Block -->
+        <div id="goal">
+            <div id="goal-img"></div>
+            <div id="goal-overlay"></div>
+            <div id="goal-content">
+                <div class="goal-block">
+                    <h2>Why Trepo?</h2>
+                    <p>A description of why Trepo was created</p>
+                </div>
+                <div class="goal-block">
+                    <h2>What is Trepo?</h2>
+                    <p>A description of what Trepo is</p>
+                </div>
+            </div>
+        </div>
 
-  </div>
-</div>
+        <!-- Trepo Parts -->
 
-<div class="row">
-  <div class="small-12 columns">&nbsp;</div>
-</div>
+        <!-- Intro Video -->
 
-<div class="row">
-  <div class="small-4 columns">
-    <h2 class="text-center">Trepo?</h2>
-    <p>
-      Trepo is a distributable, versioned, genealogical API built atop a standard property graph.
-      It is cross platform, language agnostic, extensible, scalable, and (best of all) completely open source under the MIT License!
-    </p>
-  </div>
-  <div class="small-4 columns">
-    <h2 class="text-center">Why?</h2>
-    <ul class="disc">
-      <li>Data should be versioned.</li>
-      <li>Control should be given to the user.</li>
-      <li>Access should be up to the user.</li>
-      <li>Clobbering should never happen.</li>
-      <li>Collaboration should be easy.</li>
-      <li>Sharing should be strait forward.</li>
-    </ul>
-  </div>
-  <div class="small-4 columns text-center">
-    <h2>Now What?</h2>
-    <br />
-    <p>
-      <a href="/overview/demos" class="button success">Take it for a spin!</a><br />
-      OR<br />
-      Click on any component to learn more!
-    </p>
-  </div>
-</div>
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <!--
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+        -->
+    </body>
+</html>
