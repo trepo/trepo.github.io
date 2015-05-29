@@ -208,8 +208,92 @@ textarea {
     padding: 0px 26px;
 }
 
+#parts {
+    position: relative;
+    width: 800px;
+    height: 500px;
+    left: 50%;
+    margin-left: -400px;
+}
 
+#parts-logo {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 300px;
+    font-size: 20px;
+    color: #eee;
+}
 
+.parts-logo-parts {
+    position: absolute;
+    border-radius: 2px;
+    background-color: #979797;
+    box-shadow: 0px 4px 0px 0px rgba(0,0,0,.10);
+    cursor: pointer;
+}
+
+.parts-logo-parts span {
+    display: block;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translate(-50%, -50%);
+}
+
+#parts-logo-api {
+    top: 1px;
+    left: 1px;
+    height: 69px;
+    width: 297px;
+}
+
+#parts-logo-npipes {
+    top: 81px;
+    left: 1px;
+    height: 92px;
+    width: 91px;
+}
+
+#parts-logo-ptree {
+    top: 81px;
+    left: 104px;
+    height: 92px;
+    width: 91px;
+}
+
+#parts-logo-dcap {
+    top: 81px;
+    left: 207px;
+    height: 92px;
+    width: 91px;
+}
+
+#parts-logo-vgraph {
+    top: 184px;
+    left: 1px;
+    height: 69px;
+    width: 297px;
+}
+
+#parts-logo-graphdb {
+    top: 264px;
+    left: 1px;
+    height: 29px;
+    width: 297px;
+}
+
+#parts-descriptions {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 500px;
+    height: 400px;
+}
 
 
 /* ==========================================================================
