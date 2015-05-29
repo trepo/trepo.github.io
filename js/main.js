@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    change_part("graphdb");
+    change_part("api");
 
     $("#parts-logo .parts-logo-parts").on("click", function() {
         change_part($(this).data('part'));

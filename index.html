@@ -35,16 +35,20 @@
         <div id="action">
             <div id="action-download" class="action-block">
                 <h2>Download</h2>
-                <p>Download one of the available implementations to try it out.</p>
-                <a href="#">Download</a>
+                <p>Right now Trepo is in a pre-alpha state, but feel free to download the Java implementation and give it a whirl.</p>
+                <a href="https://github.com/trepo/trepo-java">Download</a>
             </div>
             <div id="action-learn" class="action-block">
                 <h2>Learn</h2>
-                <p>Explore the documentation</p>
-                <a href="#">documentation</a></div>
+                <a href="https://github.com/trepo/trepo">Trepo Specification</a><br />
+                <a href="https://github.com/trepo/npipes">nPipes Specification</a><br />
+                <a href="https://github.com/trepo/ptree">pTree Specification</a><br />
+                <a href="https://github.com/trepo/dcap">dCap Specification</a><br />
+                <a href="https://github.com/trepo/vgraph">vGraph Specification</a>
+            </div>
             <div id="action-contribute" class="action-block">
                 <h2>Contribute</h2>
-                <p>Contribute to the project</p>
+                <p>Contribute to one of the many projects that comprise Trepo. Or just try things out and let us know how it goes!</p>
                 <a href="https://github.com/trepo">GitHub</a></div>
             </div>
         </div>
@@ -77,22 +81,46 @@
             </div>
             <div id="parts-descriptions">
                 <div id="parts-description-graphdb" class="parts-description hidden">
-                    Graph Database
+                    <h2>Graph Database</h2>
+                    <p>Trepo is built on top of a <a href="http://en.wikipedia.org/wiki/Graph_database">directed property graph</a>. Tinkerpop has an excellent introduction to property graphs available <a href="https://github.com/tinkerpop/blueprints/wiki/Property-Graph-Model">here</a></p>
+                    <p>Trepo can be built on any property graph that meets the following requirements:</p>
+                    <ul>
+                        <li>Supports directed edges.</li>
+                        <li>Allows properties to be set on nodes and edges.</li>
+                        <li>Allows nodes and edges to be retrieved or looked up via an assigned id.</li>
+                    </ul>
                 </div>
                 <div id="parts-description-vgraph" class="parts-description hidden">
-                    vGraph
+                    <h2>vGraph</h2>
+                    <p>A distributable versioned property graph.</p>
+                    <p>By adding additional requirements to a standard property graph, vGraph gains the ability to be versionable in a distributed environment. Each element is assigned a immutable UUID and label, and all changes are tracked through commits. Different databases, or repositories, can be linked together through the use of boundary nodes.</p>
+                    <a href="https://github.com/trepo/vgraph">vGraph specification</a>
                 </div>
                 <div id="parts-description-dcap" class="parts-description hidden">
-                    dCap
+                    <h2>dCap</h2>
+                    <p>vGraph commits, or sets of changes, can be stored, queried, and retrieved using dCap. You can query for things like:</p>
+                    <ul>
+                        <li>Give me a list of authors who modified this element.</li>
+                        <li>Who else is working on what I'm working on?</li>
+                        <li>Get me a list of all changes to a repository within this specific time frame.</li>
+                    </ul>
+                    <a href="https://github.com/trepo/dcap">dCap specification</a>
                 </div>
                 <div id="parts-description-ptree" class="parts-description hidden">
-                    pTree
+                    <h2>pTree</h2>
+                    <p>Defines a schema for storing genealogical information in vGraph. It is extensible by design, and takes full advantage of vGraph&#39;s capabilities.</p>
+                    <a href="https://github.com/trepo/ptree">pTree specification</a>
                 </div>
                 <div id="parts-description-npipes" class="parts-description hidden">
-                    nPipes
+                    <h2>nPipes</h2>
+                    <p>Provides a cross-repository query and traversal framework specific to vGraph.</p>
+                    <a href="https://github.com/trepo/npipes">nPipes specification</a>
                 </div>
                 <div id="parts-description-api" class="parts-description hidden">
-                    REST API
+                    <h2>REST API</h2>
+                    <p>The actual API specification for Trepo. It exposes the capabilities of vGraph, dCap, pTree, and nPIpes, as well as providing additional utilities to provide a complete genealogical API.</p>
+                    <p>Beyond the standard endpoints declared in the specification, the API may be extended in various ways to accommodate custom functionality and data models.</p>
+                    <a href="https://github.com/trepo/trepo">REST API specification</a>
                 </div>
             </div>
         </div>
