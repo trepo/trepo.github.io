@@ -307,6 +307,21 @@ textarea {
     text-align: center;
 }
 
+
+#footer {
+    position: relative;
+    height: 40px;
+    text-align: center;
+    background-color: #333;
+    color: #ddd;
+    padding-top: 10px;
+    padding-right: 700px;
+}
+
+
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
