@@ -201,6 +201,10 @@ textarea {
     text-align: center;
 }
 
+#goal-content p {
+    text-align: left;
+}
+
 .goal-block {
     display: inline-block;
     width: 300px;
