@@ -96,6 +96,49 @@ textarea {
    ========================================================================== */
 
 
+h2 {
+    font-weight: normal;
+    font-size: 2em;
+    color: #3C74A3;
+}
+
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+
+    color: #fff;
+    background-color: #31b97e;
+    border-color: #2ead76;
+
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #2ead76;
+    border-color: #2ba16e;
+}
 
 
 #hero {
@@ -151,12 +194,13 @@ textarea {
 .action-block {
     display: inline-block;
     width: 250px;
-    height: 230px;
+    height: 300px;
     vertical-align: top;    
 }
 
 .action-block p {
     text-align: left;
+    min-height: 100px;
 }
 
 #action-learn {
@@ -199,6 +243,7 @@ textarea {
 
 #goal-content h2 {
     text-align: center;
+    color: #ddd;
 }
 
 #goal-content p {
@@ -215,14 +260,14 @@ textarea {
 #parts {
     position: relative;
     width: 800px;
-    height: 330px;
+    height: 360px;
     left: 50%;
     margin-left: -400px;
 }
 
 #parts-logo {
     position: absolute;
-    top: 20px;
+    top: 35px;
     left: 0px;
     width: 300px;
     height: 300px;
@@ -300,7 +345,7 @@ textarea {
 }
 
 .parts-description {
-    padding: 10px 20px;
+    padding: 0px 20px;
 }
 
 .parts-description h2 {
@@ -310,7 +355,7 @@ textarea {
 
 #footer {
     position: relative;
-    height: 40px;
+    height: 30px;
     text-align: center;
     background-color: #333;
     color: #ddd;
