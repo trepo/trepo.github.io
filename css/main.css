@@ -102,6 +102,12 @@ h2 {
     color: #3C74A3;
 }
 
+h3 {
+    font-weight: normal;
+    font-size: 1.5em;
+    color: #3C74A3;
+}
+
 .btn {
     display: inline-block;
     padding: 6px 12px;
@@ -172,11 +178,20 @@ h2 {
     top: 50%;
     left: 50%;
     margin-right: -50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 #hero-logo {
     height: 150px;
+}
+
+@media screen and (max-width: 600px) {
+    #hero-logo {
+        height: 75px;
+    }
 }
 
 #hero-text {
@@ -200,10 +215,10 @@ h2 {
 
 .action-block p {
     text-align: left;
-    min-height: 100px;
+    min-height: 5em;
 }
 
-#action-learn {
+#action-use {
     margin: 0px 20px;
 }
 
@@ -234,44 +249,42 @@ h2 {
 
 #goal-content {
     position: relative;
-    width: 100%;
+    max-width: 600px;
     height: 100%;
     color: #ddd;
     text-align: center;
-    padding-bottom: 15px;
+    padding: 15px;
+    margin: 0 auto;
+    font-style: italic;
 }
 
 #goal-content h2 {
     text-align: center;
     color: #ddd;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.35);
 }
 
 #goal-content p {
     text-align: left;
+    font-weight: lighter;
     font-style: italic;
-}
-
-.goal-block {
-    display: inline-block;
-    width: 300px;
-    vertical-align: top;
-    padding: 0px 26px;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.35);
 }
 
 #parts {
     position: relative;
-    width: 800px;
-    height: 360px;
-    left: 50%;
-    margin-left: -400px;
+    text-align: center;
+    margin: 2em auto;
 }
 
 #parts-logo {
-    position: absolute;
-    top: 35px;
-    left: 0px;
+    display: inline-block;
+    position: relative;
     width: 300px;
     height: 300px;
+    vertical-align: top;
     font-size: 20px;
     color: #eee;
 }
@@ -290,8 +303,8 @@ h2 {
     position: relative;
     top: 50%;
     left: 50%;
-    -ms-transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 
@@ -316,7 +329,7 @@ h2 {
     width: 91px;
 }
 
-#parts-logo-dcap {
+#parts-logo-yproof {
     top: 81px;
     left: 207px;
     height: 92px;
@@ -338,30 +351,52 @@ h2 {
 }
 
 #parts-descriptions {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    width: 500px;
+    display: inline-block;
+    position: relative;
+    max-width: 500px;
     max-height: 350px;
+    vertical-align: top;
 }
 
 .parts-description {
     padding: 0px 20px;
+    text-align: center;
 }
 
-.parts-description h2 {
-    text-align: center;
+.parts-description h2  {
+    margin: 0 0;
+}
+
+.parts-description h3  {
+    font-size: 1.25em;
+}
+
+.parts-description p  {
+    text-align: left;
+    font-size: 1.25em;
 }
 
 
 #footer {
     position: relative;
-    height: 30px;
-    text-align: center;
     background-color: #333;
     color: #ddd;
-    padding-top: 10px;
-    padding-right: 700px;
+}
+
+#footer span {
+    display: block;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: .75em 10px;
+}
+
+#footer a,
+#footer a:active,
+#footer a:hover,
+#footer a:visited {
+    color: #ddd;
+    text-decoration: none;
+    margin-left: 1em;
 }
 
 

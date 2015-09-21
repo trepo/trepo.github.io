@@ -11,6 +11,7 @@
         <!-- Place favicon.ico in the root directory -->
 
         <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
@@ -33,19 +34,19 @@
 
         <!-- Actions Block -->
         <div id="action">
-            <div id="action-download" class="action-block">
-                <h2>Download</h2>
-                <p>Trepo is currently in a pre-alpha state, so feel free to download the Java implementation and give it a whirl.</p>
-                <a href="https://github.com/trepo/trepo-java" class="btn">Trepo Server</a>
-            </div>
             <div id="action-learn" class="action-block">
                 <h2>Learn</h2>
-                <p>Reference and read about the specifications for each of the components that make up Trepo.</p>
-                <a href="https://github.com/trepo/trepo" class="btn">Specifications</a>
+                <p>Read a Developer Overview of Trepo to learn why Trepo was created and how it works.</p>
+                <a href="https://dl.dropboxusercontent.com/u/91124015/Trepo-Developer-Overview.pdf" target="_blank" class="btn">Download PDF</a>
+            </div>
+            <div id="action-use" class="action-block">
+                <h2>Use</h2>
+                <p>The easiest way to get started with Trepo is to use the JavaScript Implementation.</p>
+                <a href="http://demo.trepo.io" class="btn">Run Trepo JS</a>
             </div>
             <div id="action-contribute" class="action-block">
                 <h2>Contribute</h2>
-                <p>Contribute to one of the many projects that comprise Trepo, or just try things out and let us know how it goes!</p>
+                <p>Like what you see? Then dive in and help, or just give us feedback and bug reports.</p>
                 <a href="https://github.com/trepo" class="btn">Visit GitHub</a>
             </div>
         </div>
@@ -55,16 +56,10 @@
             <div id="goal-img"></div>
             <div id="goal-overlay"></div>
             <div id="goal-content">
-                <div class="goal-block">
-                    <h2>Why Trepo?</h2>
-                    <!-- Trepo was created to fill the need for a modern, general purpose genealogical API. Each time someone wanted to truly innovate they were forced to start from scratch and build anew. -->
-                    <p>Trepo was conceived because there was no good open source general purpose genealogical API. Any developer wanting to innovate had to start from scratch each time they wanted to add their own unique twist to a genealogy software product. There was also a lack of true public/private collaboration in the industry, as well as a strong trend of centralization and ceding ownership and control of data to larger organizations. Trepo was created to address these problems and provide a solid foundation for others to build on.</p>
-                </div>
-                <div class="goal-block">
-                    <h2>What is Trepo?</h2>
-                    <p>Trepo is an open source genealogy API designed to enable public/private collaboration.</p>
-                    <p>Trepo&#39;s language agnostic specification allows it to run on any standard graph database in any language. And since it is open source and extensible, companies and developers can take advantage of Trepo and tailor it to their specific needs.</p>
-                </div>
+                <h2>Introducing Trepo</h2>
+                <p>People need genealogy software that helps them work together. They need software that assists them as they work. They need software that works on their behalf. We as developers need the tools and resources to make that happen. Trepo is one of those tools.</p>
+                <p>Trepo is an open source genealogy API. It comes with a versioned genealogical database, a distributed query framework, and a set of extensible research and data models. All of this is wrapped in a language agnostic specification and supplemented with HTML5 Web Components.</p>
+                <p>Developers can easily implement collaboration, deal with disagreements, and control access to a person’s data. And because they are using a solid, extensible foundation, they can can focus on creating new experiences instead of recreating basic functionality.</p>
             </div>
         </div>
 
@@ -74,59 +69,53 @@
                 <div id="parts-logo-api" class="parts-logo-parts" data-part="api"><span>REST API</span></div>
                 <div id="parts-logo-npipes" class="parts-logo-parts" data-part="npipes"><span>nPipes</span></div>
                 <div id="parts-logo-ptree" class="parts-logo-parts" data-part="ptree"><span>pTree</span></div>
-                <div id="parts-logo-dcap" class="parts-logo-parts" data-part="dcap"><span>dCap</span></div>
+                <div id="parts-logo-yproof" class="parts-logo-parts" data-part="yproof"><span>yProof</span></div>
                 <div id="parts-logo-vgraph" class="parts-logo-parts" data-part="vgraph"><span>vGraph</span></div>
-                <div id="parts-logo-graphdb" class="parts-logo-parts" data-part="graphdb"><span>Graph Database</span></div>
+                <div id="parts-logo-graphdb" class="parts-logo-parts" data-part="graphdb"><span>Property Graph</span></div>
             </div>
             <div id="parts-descriptions">
                 <div id="parts-description-graphdb" class="parts-description hidden">
-                    <h2>Graph Database</h2>
-                    <p>Trepo is built on top of a <a href="http://en.wikipedia.org/wiki/Graph_database">directed property graph</a>. Tinkerpop has an excellent introduction to property graphs available <a href="https://github.com/tinkerpop/blueprints/wiki/Property-Graph-Model">here</a></p>
-                    <p>Trepo can be built on any property graph that meets the following requirements:</p>
-                    <ul>
-                        <li>Supports directed edges.</li>
-                        <li>Allows properties to be set on nodes and edges.</li>
-                        <li>Allows nodes and edges to be retrieved or looked up via an assigned id.</li>
-                    </ul>
+                    <h2>Property Graph</h2>
+                    <h3>A Directed Property Graph that is ID Addressable</h3>
+                    <p>A Directed Graph is where each Edge in the graph has a direction, going from one node to another. A Directed Property Graph has a set of key/value pairs on each Node and Edge called properties.</p>
+                    <a href="https://github.com/tinkerpop/blueprints/wiki/Property-Graph-Model" class="btn">Property Graph Introduction</a>
                 </div>
                 <div id="parts-description-vgraph" class="parts-description hidden">
                     <h2>vGraph</h2>
-                    <p>A distributable versioned property graph.</p>
-                    <p>By adding additional requirements to a standard property graph, vGraph gains the ability to be versionable in a distributed environment. Each element is assigned a immutable UUID and label, and all changes are tracked through commits. Different databases, or repositories, can be linked together through the use of boundary nodes.</p>
-                    <a href="https://github.com/trepo/vgraph" class="btn">vGraph specification</a>
+                    <h3>A Distributable, Versioned Graph Database</h3>
+                    <p>In vGraph, every Node and Edge is assigned an immutable UUID and Label, and every change is tracked in a Commits. Different instances of vGraph can be linked together using Boundary Nodes.</p>
+                    <a href="https://github.com/trepo/vgraph" class="btn">vGraph Specification</a>
                 </div>
-                <div id="parts-description-dcap" class="parts-description hidden">
-                    <h2>dCap</h2>
-                    <p>vGraph commits, or sets of changes, can be stored, queried, and retrieved using dCap. You can query for things like:</p>
-                    <ul>
-                        <li>Give me a list of authors who modified this element.</li>
-                        <li>Who else is working on what I'm working on?</li>
-                        <li>Get me a list of all changes to a repository within this specific time frame.</li>
-                    </ul>
-                    <a href="https://github.com/trepo/dcap" class="btn">dCap specification</a>
+                <div id="parts-description-yproof" class="parts-description hidden">
+                    <h2>yProof</h2>
+                    <h3>An Extensible Set of Research Methodologies</h3>
+                    <p>Everyone does research a little differently, so yProof provides an extensible set of research methodologies. These can be linked to pTree to support the conclusions stored there.</p>
+                    <a href="https://github.com/trepo/yProof" class="btn">yProof Specification</a>
                 </div>
                 <div id="parts-description-ptree" class="parts-description hidden">
                     <h2>pTree</h2>
-                    <p>Defines a schema for storing genealogical information in vGraph. It is extensible by design, and takes full advantage of vGraph&#39;s capabilities.</p>
-                    <a href="https://github.com/trepo/ptree" class="btn">pTree specification</a>
+                    <h3>An Extensible Genealogical Data Model</h3>
+                    <p>Defines a schema for storing genealogical information in vGraph. Store persons, events, facts, and more in an extensible data model designed to facilitate versioning and disagreements.</p>
+                    <a href="https://github.com/trepo/ptree" class="btn">pTree Specification</a>
                 </div>
                 <div id="parts-description-npipes" class="parts-description hidden">
                     <h2>nPipes</h2>
-                    <p>Provides a cross-repository query and traversal framework specific to vGraph.</p>
-                    <a href="https://github.com/trepo/npipes" class="btn">nPipes specification</a>
+                    <h3>A Cross Repository Graph Traversal Framework</h3>
+                    <p>nPipes is an expressive query language wrapped in a language agnostic specification. It allows developers to ignore Boundary Nodes and supports several different execution strategies.</p>
+                    <a href="https://github.com/trepo/npipes" class="btn">nPipes Specification</a>
                 </div>
                 <div id="parts-description-api" class="parts-description hidden">
                     <h2>REST API</h2>
-                    <p>The actual API specification for Trepo. It exposes the capabilities of vGraph, dCap, pTree, and nPIpes, as well as providing additional utilities to provide a complete genealogical API.</p>
-                    <p>Beyond the standard endpoints declared in the specification, the API may be extended in various ways to accommodate custom functionality and data models.</p>
-                    <a href="https://github.com/trepo/trepo" class="btn">REST API specification</a>
+                    <h3>A REST API Specification</h3>
+                    <p>A language agnostic API specification letting the developer access vGraph, pTree, and yProof as well as providing several nice nPIpes traversals to get ancestry, descendancy, and more.</p>
+                    <a href="https://github.com/trepo/api" class="btn">REST API Specification</a>
                 </div>
             </div>
         </div>
 
         <!-- Footer -->
         <div id="footer">
-            © <script>document.write(new Date().getFullYear())</script> Trepo
+            <span>© <script>document.write(new Date().getFullYear())</script> Trepo <a href="https://github.com/trepo"><i class="fa fa-github"></i> GitHub</a><a href="https://trello.com/b/LDXropWY/trepo-development"><i class="fa fa-trello"></i> Trello</a></span>
         </div>
 
 
@@ -135,18 +124,5 @@
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
-
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <!--
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='https://www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-        </script>
-        -->
     </body>
 </html>
