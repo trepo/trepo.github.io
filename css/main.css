@@ -222,6 +222,12 @@ h3 {
     margin: 0px 20px;
 }
 
+#rootstech {
+    position: relative;
+    height: 200px;
+    text-align: center;
+}
+
 #goal {
     position: relative;
     width: 100%;
